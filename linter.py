@@ -29,8 +29,8 @@ class Rubocop(RubyLinter):
         'ruby'
     )
     cmd = None
-    executable = 'ruby'
-    version_args = '-S rubocop --version'
+    executable = 'rubocop'
+    version_args = '--version'
     version_re = r'(?P<version>\d+\.\d+\.\d+)'
     version_requirement = '>= 0.34.0'
     regex = (
